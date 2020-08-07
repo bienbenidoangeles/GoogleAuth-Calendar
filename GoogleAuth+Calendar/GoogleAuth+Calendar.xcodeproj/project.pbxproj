@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		F1A7B18224DE02E200704C13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A7B18024DE02E200704C13 /* Main.storyboard */; };
 		F1A7B18424DE02E600704C13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1A7B18324DE02E600704C13 /* Assets.xcassets */; };
 		F1A7B18724DE02E600704C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A7B18524DE02E600704C13 /* LaunchScreen.storyboard */; };
+		F1A7B19224DE0C6E00704C13 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1A7B19124DE0C6E00704C13 /* credentials.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F1A7B18324DE02E600704C13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F1A7B18624DE02E600704C13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F1A7B18824DE02E600704C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1A7B19124DE0C6E00704C13 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				27C4A580C863379646A69982 /* Pods-GoogleAuth+Calendar.debug.xcconfig */,
 				15901A728DF71CD9F38533FE /* Pods-GoogleAuth+Calendar.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 		F1A7B17924DE02E200704C13 /* GoogleAuth+Calendar */ = {
 			isa = PBXGroup;
 			children = (
+				F1A7B19024DE0BE800704C13 /* Secrets */,
 				F1A7B17A24DE02E200704C13 /* AppDelegate.swift */,
 				F1A7B17C24DE02E200704C13 /* SceneDelegate.swift */,
 				F1A7B17E24DE02E200704C13 /* ViewController.swift */,
@@ -90,6 +92,14 @@
 				F1A7B18824DE02E600704C13 /* Info.plist */,
 			);
 			path = "GoogleAuth+Calendar";
+			sourceTree = "<group>";
+		};
+		F1A7B19024DE0BE800704C13 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+				F1A7B19124DE0C6E00704C13 /* credentials.plist */,
+			);
+			path = Secrets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A7B18724DE02E600704C13 /* LaunchScreen.storyboard in Resources */,
+				F1A7B19224DE0C6E00704C13 /* credentials.plist in Resources */,
 				F1A7B18424DE02E600704C13 /* Assets.xcassets in Resources */,
 				F1A7B18224DE02E200704C13 /* Main.storyboard in Resources */,
 			);
