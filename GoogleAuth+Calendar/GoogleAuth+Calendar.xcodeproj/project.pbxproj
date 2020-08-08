@@ -16,6 +16,9 @@
 		F1A7B18724DE02E600704C13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A7B18524DE02E600704C13 /* LaunchScreen.storyboard */; };
 		F1A7B19224DE0C6E00704C13 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = F1A7B19124DE0C6E00704C13 /* credentials.plist */; };
 		F1A7B19424DE0E6A00704C13 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7B19324DE0E6A00704C13 /* KeyChain.swift */; };
+		F1A7B19624DE1CEF00704C13 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7B19524DE1CEF00704C13 /* UIViewController+Navigation.swift */; };
+		F1A7B19824DE1DDF00704C13 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7B19724DE1DDF00704C13 /* MainViewController.swift */; };
+		F1A7B19A24DE209B00704C13 /* GoogleAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A7B19924DE209B00704C13 /* GoogleAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		F1A7B18824DE02E600704C13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1A7B19124DE0C6E00704C13 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		F1A7B19324DE0E6A00704C13 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		F1A7B19524DE1CEF00704C13 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
+		F1A7B19724DE1DDF00704C13 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F1A7B19924DE209B00704C13 /* GoogleAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +92,11 @@
 			children = (
 				F1A7B19024DE0BE800704C13 /* Secrets */,
 				F1A7B17A24DE02E200704C13 /* AppDelegate.swift */,
+				F1A7B19924DE209B00704C13 /* GoogleAuth.swift */,
+				F1A7B19524DE1CEF00704C13 /* UIViewController+Navigation.swift */,
 				F1A7B17C24DE02E200704C13 /* SceneDelegate.swift */,
 				F1A7B17E24DE02E200704C13 /* ViewController.swift */,
+				F1A7B19724DE1DDF00704C13 /* MainViewController.swift */,
 				F1A7B18024DE02E200704C13 /* Main.storyboard */,
 				F1A7B18324DE02E600704C13 /* Assets.xcassets */,
 				F1A7B18524DE02E600704C13 /* LaunchScreen.storyboard */,
@@ -240,7 +249,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A7B17F24DE02E200704C13 /* ViewController.swift in Sources */,
+				F1A7B19624DE1CEF00704C13 /* UIViewController+Navigation.swift in Sources */,
 				F1A7B19424DE0E6A00704C13 /* KeyChain.swift in Sources */,
+				F1A7B19824DE1DDF00704C13 /* MainViewController.swift in Sources */,
+				F1A7B19A24DE209B00704C13 /* GoogleAuth.swift in Sources */,
 				F1A7B17B24DE02E200704C13 /* AppDelegate.swift in Sources */,
 				F1A7B17D24DE02E200704C13 /* SceneDelegate.swift in Sources */,
 			);
