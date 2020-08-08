@@ -9,15 +9,22 @@
 import UIKit
 import GoogleSignIn
 
+
 class MainViewController: UIViewController {
     
     @IBOutlet weak var signOutButton: UIButton!
     
+    
+    @IBOutlet weak var welcomeLabel: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .systemGray
+        GIDSignIn.sharedInstance()?.shouldFetchBasicProfile = true
+        welcomeLabel.text = "Welcome back \(GIDSignIn.sharedInstance()?.currentUser.profile.name ?? "no user found")"
+        
+ 
     }
     
     @IBAction func signOutButtonPressed(_ sender: UIButton) {
@@ -25,6 +32,8 @@ class MainViewController: UIViewController {
         UIViewController.showViewController(storyBoardName: "Main", viewControllerId: "ViewController")
         
     }
+    
+    
     
     
     

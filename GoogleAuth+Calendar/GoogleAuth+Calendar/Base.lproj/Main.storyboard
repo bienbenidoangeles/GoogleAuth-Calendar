@@ -40,25 +40,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-K6-Lgi">
-                                <rect key="frame" x="343" y="44" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUG-K6-Lgi">
+                                <rect key="frame" x="179" y="433" width="56" height="30"/>
                                 <state key="normal" title="SignOut"/>
                                 <connections>
                                     <action selector="signOutButtonPressed:" destination="gRC-LA-aUR" eventType="touchUpInside" id="OQV-qa-YV3"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyB-dy-6je">
+                                <rect key="frame" x="20" y="188" width="374" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YyB-dy-6je" firstAttribute="top" secondItem="R36-se-NiJ" secondAttribute="top" constant="100" id="Kbt-Ji-SQB"/>
+                            <constraint firstItem="R36-se-NiJ" firstAttribute="trailing" secondItem="YyB-dy-6je" secondAttribute="trailing" constant="20" id="UUH-8g-MoB"/>
+                            <constraint firstItem="YUG-K6-Lgi" firstAttribute="centerY" secondItem="5nW-PS-dU9" secondAttribute="centerY" id="ePO-Cr-M2N"/>
+                            <constraint firstItem="YyB-dy-6je" firstAttribute="leading" secondItem="R36-se-NiJ" secondAttribute="leading" constant="20" id="i79-c7-yFn"/>
+                            <constraint firstItem="YUG-K6-Lgi" firstAttribute="centerX" secondItem="5nW-PS-dU9" secondAttribute="centerX" id="rLj-Bx-koa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="R36-se-NiJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="aiw-Gt-4e5"/>
                     <connections>
                         <outlet property="signOutButton" destination="YUG-K6-Lgi" id="StY-x6-tAZ"/>
+                        <outlet property="welcomeLabel" destination="YyB-dy-6je" id="ZNn-01-pHL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pTO-gK-B9s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-161" y="82"/>
+            <point key="canvasLocation" x="1657.9710144927537" y="81.696428571428569"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Rxa-Uc-BVW">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZOW-L4-1ra" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rez-q2-sgj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="gRC-LA-aUR" kind="relationship" relationship="rootViewController" id="q2x-AU-MM3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgQ-vD-sbI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="747.82608695652175" y="81.696428571428569"/>
         </scene>
     </scenes>
 </document>
